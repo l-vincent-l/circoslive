@@ -1,0 +1,17 @@
+<main class="container">
+  <p class="alert alert-info" role="alert"
+    phx-click="lv:clear-flash"
+    phx-value-key="info"><%= live_flash(@flash, :info) %></p>
+
+  <p class="alert alert-danger" role="alert"
+    phx-click="lv:clear-flash"
+    phx-value-key="error"><%= live_flash(@flash, :error) %></p>
+  <section class="phx-hero">
+      <h1>Cherchez votre circonscription</h1>
+  </section>
+  <section class="row">
+    <article class="column">
+      <%= @inner_content %>
+    </article>
+  </section>
+</main>
